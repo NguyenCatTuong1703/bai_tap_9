@@ -50,9 +50,10 @@ body {
     }
 
     .btn-save {
-        background-color: #212540;
+        background-color: #0D6EFD;
         color: white;
         margin-top: 20px;
+        margin: auto;
     }
 }
 
@@ -72,7 +73,10 @@ body {
 
         .btn-edit {
             background-color: yellow;
-            color: red;
+            a {
+                color: red;
+                text-decoration: none;
+            }
         }
         
         .btn-delete {
@@ -90,11 +94,11 @@ body {
 
 .btn {
     cursor: pointer;
-    padding: 10px 20px;
-    border-radius: 10px;
+    padding: 10px 30px;
+    border-radius: 50px;
     text-transform: uppercase;
     font-weight: bold;
-    border: 1px solid black;
+    border: none;
     transition: .2s ease-in;
 
     &:hover {

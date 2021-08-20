@@ -49,3 +49,7 @@ export const deleteStudent = (deleteStudentId) => {
         }
     };
 }
+
+export const editStudent = (student) => {
+    return
+}

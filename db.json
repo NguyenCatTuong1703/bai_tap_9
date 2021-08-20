@@ -39,6 +39,14 @@
       "diachi": "HCM",
       "tuoi": 24,
       "mota": "BE developer"
+    },
+    {
+      "id": 6,
+      "hoten": "Nguyễn Cát Tường",
+      "mssv": "90564",
+      "diachi": "Gia Lai",
+      "tuoi": "20",
+      "mota": "FE developer"
     }
   ]
 }

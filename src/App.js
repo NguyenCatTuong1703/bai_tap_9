@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import "./App.scss";
-import { addNewStudent, deleteStudent, getAllStudents } from "./redux/actions/studentAction";
+import { addNewStudent, deleteStudent, editStudent, getAllStudents } from "./redux/actions/studentAction";
 
 function App() {
 
@@ -43,20 +43,26 @@ function App() {
   }
 
   const handleDeleteStudent = (student) => {
-    console.log("Delete: ", student.id);
+    console.log("Delete: ", student);
     const deleteStudentId = student.id;
-    const action = deleteStudent(deleteStudentId);
-    dispatch(action);
+    
+    if (window.confirm("Xóa sinh viên này?")) {
+      const action = deleteStudent(deleteStudentId);
+      dispatch(action);
+      layDuLieu();
+    }
   }
 
   const handleEditStudent = (student) => {
     console.log("Edit: ", student);
-    
+
+    const action = editStudent(student);
+    dispatch(action);
   }
 
   return (
     <div className="App">
-      <div className="form">
+      <div className="form" id="form">
         <h3 className="form__title">Form nhập thông tin sinh viên</h3>
         <form className="form__content" name="studentForm" >
           <div className="form__control">
@@ -114,8 +120,16 @@ function App() {
                         <td className="table__body-diachi">{student.diachi}</td>
                         <td className="table__body-tuoi">{student.tuoi}</td>
                         <td className="table__body-mota">{student.mota}</td>
-                        <td><button className="btn btn-edit" onClick={() => handleEditStudent(student)}>Edit</button></td>
-                        <td><button className="btn btn-delete" onClick={() => handleDeleteStudent(student)}>Delete</button></td>
+                        <td>
+                          <button className="btn btn-edit" onClick={() => handleEditStudent(student)}>
+                            <a href="#form">Edit</a>
+                          </button>
+                        </td>
+                        <td>
+                          <button className="btn btn-delete" onClick={() => handleDeleteStudent(student)}>
+                            Delete
+                          </button>
+                        </td>
                       </tr>
                     ))
                     : <tr><td colSpan="8" style={{ textAlign: 'center' }}>{error}</td></tr>
