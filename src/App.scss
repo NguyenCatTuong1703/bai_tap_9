@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: lightgray;
+}
+
+.App {
+    width: 1000px;
+    max-width: 80%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 20px;
+        gap: 20px;
+    }
+
+    &__control {
+        display: flex;
+        flex-direction: column;
+        width: calc(50% - 10px);
+        gap: 10px;
+
+        &--fullwidth {
+            width: 100%;
+        }
+
+        &-label {
+            font-weight: 500;
+            font-size: 16px;
+        }
+
+        &-input {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid lightgray;
+        }
+    }
+
+    .btn-save {
+        background-color: #212540;
+        color: white;
+        margin-top: 20px;
+    }
+}
+
+.view {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: left;
+
+        &__header {
+            border-bottom: 1px solid lightgray;
+        }
+
+        .btn-edit {
+            background-color: yellow;
+            color: red;
+        }
+        
+        .btn-delete {
+            background-color: red;
+            color: white;
+        }
+    }
+
+    th,
+    td {
+        border-bottom: 1px solid lightgray;
+        height: 50px;
+    }
+}
+
+.btn {
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid black;
+    transition: .2s ease-in;
+
+    &:hover {
+        opacity: 0.7;
+    }
+}

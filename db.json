@@ -1,0 +1,44 @@
+{
+  "sinhvien": [
+    {
+      "id": 1,
+      "hoten": "Le Huy Vu",
+      "mssv": "12345",
+      "diachi": "Nha Trang",
+      "tuoi": 25,
+      "mota": "FE developer"
+    },
+    {
+      "id": 2,
+      "hoten": "Quoc Nam",
+      "mssv": "24473",
+      "diachi": "HCM",
+      "tuoi": 25,
+      "mota": "Full stack developer"
+    },
+    {
+      "id": 3,
+      "hoten": "Minh Thao",
+      "mssv": "14372",
+      "diachi": "Soc Trang",
+      "tuoi": 25,
+      "mota": "FE developer"
+    },
+    {
+      "id": 4,
+      "hoten": "Son",
+      "mssv": "75636",
+      "diachi": "HCM",
+      "tuoi": 23,
+      "mota": "BE developer"
+    },
+    {
+      "id": 5,
+      "hoten": "Huy",
+      "mssv": "36425",
+      "diachi": "HCM",
+      "tuoi": 24,
+      "mota": "BE developer"
+    }
+  ]
+}
