@@ -1,0 +1,36 @@
+.view {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+
+    &__title {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: left;
+
+        &__header {
+            border-bottom: 1px solid lightgray;
+        }
+
+        .btn-edit {
+            background-color: yellow;
+            color: red;
+        }
+
+        .btn-delete {
+            background-color: red;
+            color: white;
+        }
+    }
+
+    th,
+    td {
+        border-bottom: 1px solid lightgray;
+        height: 50px;
+    }
+}

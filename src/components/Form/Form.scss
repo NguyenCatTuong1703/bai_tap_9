@@ -1,0 +1,69 @@
+.form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+
+    &__title {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .id-student-edit {
+        display: block;
+        float: right;
+    }
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 20px;
+        gap: 20px;
+    }
+
+    &__control {
+        display: flex;
+        flex-direction: column;
+        width: calc(50% - 10px);
+        gap: 10px;
+
+        &--fullwidth {
+            width: 100%;
+        }
+
+        &-label {
+            font-weight: 500;
+            font-size: 16px;
+        }
+
+        &-input {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid lightgray;
+        }
+    }
+
+    .button-group {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 20px;
+    }
+
+    .btn-add,
+    .btn-save,
+    .btn-cancel {
+        color: white;
+        width: 300px;
+    }
+
+    .btn-add {
+        background-color: #0D6EFD;
+    }
+
+    .btn-save {
+        background-color: #198754;
+    }
+
+    .btn-cancel {
+        background-color: #DC3545;
+    }
+}

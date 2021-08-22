@@ -1,44 +1,44 @@
 {
   "sinhvien": [
     {
-      "id": 1,
-      "hoten": "Le Huy Vu",
-      "mssv": "12345",
+      "hoten": "Lê Huy Vũ",
+      "mssv": "54321",
       "diachi": "Nha Trang",
-      "tuoi": 25,
-      "mota": "FE developer"
+      "tuoi": "25",
+      "mota": "FE developer",
+      "id": 1
     },
     {
-      "id": 2,
-      "hoten": "Quoc Nam",
+      "hoten": "Quốc Nam",
       "mssv": "24473",
-      "diachi": "HCM",
-      "tuoi": 25,
-      "mota": "Full stack developer"
+      "diachi": "TP. HCM",
+      "tuoi": "25",
+      "mota": "Full stack developer",
+      "id": 2
     },
     {
-      "id": 3,
-      "hoten": "Minh Thao",
+      "hoten": "Minh Thảo",
       "mssv": "14372",
-      "diachi": "Soc Trang",
-      "tuoi": 25,
-      "mota": "FE developer"
+      "diachi": "Sóc Trăng",
+      "tuoi": "25",
+      "mota": "FE developer",
+      "id": 3
     },
     {
-      "id": 4,
-      "hoten": "Son",
+      "hoten": "Sơn",
       "mssv": "75636",
-      "diachi": "HCM",
-      "tuoi": 23,
-      "mota": "BE developer"
+      "diachi": "TP. HCM",
+      "tuoi": "23",
+      "mota": "BE developer",
+      "id": 4
     },
     {
-      "id": 5,
       "hoten": "Huy",
       "mssv": "36425",
-      "diachi": "HCM",
-      "tuoi": 24,
-      "mota": "BE developer"
+      "diachi": "TP. HCM",
+      "tuoi": "24",
+      "mota": "BE developer",
+      "id": 5
     },
     {
       "id": 6,
