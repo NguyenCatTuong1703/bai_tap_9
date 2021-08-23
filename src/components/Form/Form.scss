@@ -1,3 +1,9 @@
+@mixin mobile {
+    @media (max-width: 425px) {
+        @content
+    }
+}
+
 .form {
     background-color: #fff;
     padding: 20px;
@@ -25,6 +31,10 @@
         flex-direction: column;
         width: calc(50% - 10px);
         gap: 10px;
+
+        @include mobile() {
+            width: 100%;
+        }
 
         &--fullwidth {
             width: 100%;
